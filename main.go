@@ -3,12 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	cards := []string{"Learning Go", returnString()}
-	cards = append(cards, "Start try hard!")
+	string := returnString()
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	fmt.Println(string)
 }
 
 func returnString() string {
