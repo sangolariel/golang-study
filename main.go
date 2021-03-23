@@ -1,14 +1,10 @@
 package main
 
-import "fmt"
-
 func main() {
-	cards := []string{"Learning Go", returnString()}
+	cards := deck{"Learning Go", returnString()}
 	cards = append(cards, "Start try hard!")
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
 }
 
 func returnString() string {
