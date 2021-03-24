@@ -1,12 +1,23 @@
 package main
 
+import "fmt"
+
 func main() {
+	// cards := newDeck()
+
+	// hand, remainCard := deal(cards, 3)
+
+	// hand.print()
+	// remainCard.print()
+	// gretting := "Learning Go"
+
+	// fmt.Println([]byte(gretting))
+
 	cards := newDeck()
 
-	hand, remainCard := deal(cards, 3)
+	cards.saveToFile("my_cards")
 
-	hand.print()
-	remainCard.print()
+	fmt.Println(cards.toString())
 }
 
 func returnString() string {
