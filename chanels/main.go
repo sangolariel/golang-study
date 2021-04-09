@@ -14,7 +14,7 @@ func main() {
 	c := make(chan string)
 
 	for _, link := range links {
-		checkLinks(link, c)
+		go checkLinks(link, c)
 	}
 
 	fmt.Println(<-c)
